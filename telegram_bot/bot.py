@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8741808732:AAH7AK6LYIkza1VB6TW_8jO8XYn_ViGMY_M")
-CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID", "-1003956057098")
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
+CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID", "YOUR_TELEGRAM_CHANNEL_ID")
+BACKEND_URL = os.getenv("BACKEND_URL", "YOUR_BACKEND_URL")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(

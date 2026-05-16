@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Example: postgresql://username:password@localhost:5432/jobs_db
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:Thirumalaib!2k5@localhost:5432/postgres")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://username:password@localhost:5432/jobs_db")
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
